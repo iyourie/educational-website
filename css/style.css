@@ -1,0 +1,139 @@
+/* Variables Start*/
+:root {
+  --main-color: orangered;
+  --main-font: "Tajawal", sans-serif;
+  --sec-font: "Koulen", cursive;
+  --all-color: black;
+}
+/* Variables End*/
+
+/* Global Rules Start*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--main-font);
+}
+.container {
+  padding: 0 15px;
+  margin: auto;
+}
+@media (max-width: 767px) {
+  .container {
+    width: 500px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1300px;
+  }
+}
+/* Global Rules End*/
+
+/* header  start*/
+header ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 25px;
+  list-style: none;
+}
+header .logo {
+  color: var(--main-color);
+  font-size: 40px;
+  font-weight: bold;
+}
+header div {
+  display: flex;
+  margin-left: 80px;
+}
+header div li a {
+  margin-left: 35px;
+}
+header a {
+  text-decoration: none;
+  font-size: 22px;
+  color: var(--all-color);
+}
+header a:hover {
+  color: var(--main-color);
+  transition: 0.1s;
+  -webkit-transition: 0.1s;
+  -moz-transition: 0.1s;
+  -ms-transition: 0.1s;
+  -o-transition: 0.1s;
+}
+/* header end*/
+
+/* main start*/
+main {
+  display: flex;
+  justify-content: space-between;
+}
+main div {
+  align-self: center;
+  margin-bottom: 120px;
+}
+main h1 {
+  line-height: 70px;
+  font-size: 50px;
+  color: var(--all-color);
+}
+main div span {
+  color: var(--main-color);
+}
+main div p {
+  font-size: 20px;
+  margin-top: 10px;
+  color: var(--all-color);
+}
+main button {
+  margin-top: 20px;
+  background: var(--main-color);
+  border: 1px solid var(--main-color);
+  border-radius: 6px;
+  box-shadow: var(--main-color) 1px 2px 4px;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 16px;
+  min-height: 40px;
+  padding: 12px 14px;
+  text-align: center;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+  font-family: var(--main-font);
+  width: 200px;
+}
+main button:hover,
+main button:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: var(--main-color);
+}
+main button:active {
+  opacity: 0.5;
+}
+main img {
+  max-width: 100%;
+  width: 60%;
+}
+/* main end*/
